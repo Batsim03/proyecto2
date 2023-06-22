@@ -1,22 +1,29 @@
 * {
     background-color: azure;
-    @media screen {min-width: 900px;max-width: 3000px;
+    @media screen {min-width: 800px;max-width: 3000px;
         
     }
 }
 
 .h1  {
-    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     align-content: center;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     text-align: unset;
+    text-size-adjust: 300px;
     
+}
+
+.h2 {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 300px;
+
 }
 
 .header {
     align-content: center;
     text-align: justify;
+    
 }
 
 .curved {
