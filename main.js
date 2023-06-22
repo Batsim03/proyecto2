@@ -3,7 +3,7 @@ const $btnOcultar = document.querySelector("#btnOcultar"),
 	$parrafo = document.querySelector("#parrafo");
 
 $btnMostrar.addEventListener("click", () => {
-	$parrafo.style.display = "parrafo";
+	$parrafo.style.display = "value";
 });
 
 

@@ -1,6 +1,6 @@
 * {
     background-color: azure;
-    @media screen {min-width: 800px;max-width: 3000px;
+    @media screen {min-width: 700px;max-width: 3000px;
         
     }
 }
