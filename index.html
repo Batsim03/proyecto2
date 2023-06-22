@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto2</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     
     <script src="https://openchat.so/chat.js"></script>
     <script>
@@ -37,7 +38,7 @@
     
     <body>
               
-        <div class="parent">
+        <div s="hola" class="parent">
             <div class="div1">
                 <h2>1-AI Marketing insertion JS</h2>
                     <picture><img src="assets/AI module_ChatPGT.jpg" alt="text alternativo" height="40%" width="40%" max-width ="100%"></picture>
@@ -141,14 +142,22 @@
             <h4>AI generative</h3>
             <h3>AI customization</h3>
     
-            <article><img src="assets/165000565.jpg" alt=""></article>
-            <article><img src="assets/318100135.jpg" alt=""></article>
-            <article><img src="assets/332228384.jpg" alt=""></article>
+            <article id="imagen1">
+                <img src="assets/165000565.jpg" alt="">
+                <p>Ese es un tipo de imagen mejorada vía IA utilizando codigo abierto y plataforma seoZinc
+                </p></article>
+            <article id="imagen2">
+                <img src="assets/318100135.jpg" alt="">
+            <p>Otro tipo de imagen con contrastes nocturnos vía IA con AresTLAND</p>
+            </article>
+            <article id="imagen3"><img src="assets/332228384.jpg" alt="">
+            <p>Ultimo tipo de imagen modificada para facilitar brillantez vía ZedLight IA platform</p>
+            </article>
     
         </section>
-                
           
-    
+        <button onclick="tipoIA()">Elige el tipo de imagen vía IA & plataformas</button>
+        <button :hover></button>
      <ol>
             <li>1st line development</li>
             <li>2d line Investigation</li>
@@ -159,6 +168,32 @@
     <section>
     
     <h1>Updated Informations</h1>
+
+    <form action="#">
+        <label for="IA">Tipo de IA</label>
+        <select name="Imagenes" id="Plataform">
+          <option value="Modulo1">Modelo 1</option>
+          <option value="Modulo2">Modelo 2</option>
+          <option value="Modulo3">Modelo 3</option>
+          <option value="Modulo4">Modelo 4</option>
+          <option value="Modulo5">Modelo 5</option>
+          <option value="Modulo6">Modelo 6</option>
+          <option value="Modulo7">Modelo 7</option>
+          <option value="Modulo8">Modelo 8</option>
+        </select>
+        <input type="submit" value="Enviar" />
+  </form>
+
+
+    <script>
+        $(document).ready(function(){
+          $('#MyButton').click(function(){
+             CapacityChart();
+          });
+        });
+      </script>
+      
+      <input type="button" value="Capacity Chart" id="MyButton" >
     
 
   <script src="./main.js"></script> 

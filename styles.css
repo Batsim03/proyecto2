@@ -1,6 +1,6 @@
 * {
     background-color: azure;
-    @media screen {min-width: 300px;max-width: 1000px;
+    @media screen {min-width: 900px;max-width: 3000px;
         
     }
 }
@@ -104,8 +104,9 @@ padding: 0;
     .div8 { grid-area: 4 / 2 / 5 / 3; max-width: 100%}
 
   .button {
-background-color: coral;
-
+        background-color: coral;
   }
+
+  
 
   
