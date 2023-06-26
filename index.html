@@ -38,35 +38,35 @@
     
     <body>
 
-           <element id="container"> 
+           
 
-        <div s="hola" class="parent">
+        <div id="container" class="parent">
             <div class="div1">
                 <h2>1-AI Marketing insertion JS</h2>
                     <picture><img src="assets/AI module_ChatPGT.jpg" alt="text alternativo" height="40%" width="40%" max-width ="100%"></picture>
                     <ul>
                         <li> <a href="https://yes-management.net/pages/renting-flats-houses-in-europe" title="Modelo 1">Modelo 1</a></li>
-                        <li id="parrafo">Insertion mode</li>
-                        <li>Easy to insert</li>
-                        <li>Flexible</li>
+                        <li id="detail1">Insertion mode</li>
+                        <li id="detail2">Easy to insert</li>
+                        <li id="detail3">Flexible</li>
 
                         <a href=""></a>
                                         
                     </ul>
             </div>
-            <div class="div2">
+            <div id="container" class="div2">
                 <h2>2-AI Marketing automation</h2>
                     <iframe src="assets/Campagne type_LinkedIn_Exportation.mp4" frameborder="0" max-width ="100%"></iframe>
                     
                             <ul>
                                 <li><a href="https://yes-management-cce441.ingress-daribow.ewp.live/"title="Modelo 2" >Modelo 2</a></li>
-                                <li>Adpatative</li>
+                                <li id="detail1">Adpatative</li>
                                 <li>Modular</li>
                                 <li>Visual effects</li>
                         
                             </ul>
             </div>
-            <div class="div3">
+            <div id="container" class="div3">
                 <h2>3-AI Marketing insertion in JS Dom</h2>
                     <picture><img src="assets/Javascript_AI_insert.jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <ul class="features">
@@ -77,7 +77,7 @@
                 
                     </ul>
             </div>
-            <div class="div4">
+            <div id="container" class="div4">
                 <h2>4-Marketing & IT Competences</h2>
                     <picture><img src="assets/MRK-RD_page5.jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <p id="details"><ul>
@@ -87,7 +87,7 @@
                 
                     </ul></p>
             </div>
-            <div class="div5">
+            <div id="container" class="div5">
                 <h2>5-AI Development 1</h2>
                     <picture><img src="assets/OIP (1).jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <ul class="features">
@@ -98,7 +98,7 @@
                 
                     </ul>
             </div>
-            <div class="div6">
+            <div id="container" class="div6">
                 <h2>6-AI Development 2</h2>
                     <picture><img src="assets/OIP (2).jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <ul>
@@ -109,7 +109,7 @@
                 
                     </ul>
             </div>
-            <div class="div7">
+            <div id="container" class="div7">
                 <h2>7-AI Development 3</h2>
                     <picture><img src="assets/OIP.jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <ul class="features">
@@ -120,7 +120,7 @@
                 
                     </ul>
             </div>
-            <div class="div8">
+            <div id=" container" class="div8">
                 <h2>8-AI Marketing insertion in PHP</h2>
                     <picture><img src="assets/PHP_example_AI_insert.jpg" alt="text alternativo" height="30%" width="30%" max-width ="100%"></picture>
                     <ul>
@@ -139,7 +139,7 @@
             <element class="button"></element>
             
             <br><br>
-                <button id="btnSelection">
+                <button onclick="onButtonClicked()" id="btnSelection">
                     <form action="#">
                         <label for="IA">Tipo de IA</label>
                         <select name="Imagenes" id="Plataform">
@@ -151,18 +151,26 @@
                           <option value="Modulo6">Modelo 6</option>
                           <option value="Modulo7">Modelo 7</option>
                           <option value="Modulo8">Modelo 8</option>
-                        </select>                 
+                        </select> 
+                        
+                        <section class="busqueda">
+
+                            <form>
+                            
+                            <label for="textInput"> Busqueda de modelo: </label>
+                            
+                            <input oninput ="onInputChanged(this)" type="text" name="textInput" id="textInput" placeholder="busqueda de modelo"/>
+                            
+                                                       
+                            </form>
+                            
+                            </section>
+
+                            <h3 id="input-text"></h3>
+                            
+                         
                     
-                    Selection</button>
-                <button id="btnShow">Show</button>
-                  
-                <h1>Mostrar y ocultar elementos en JavaScript</h1>
-                
-                <br><br>
-                    <button id="btnOcultar">Ocultar</button>
-                    <button id="btnMostrar">Mostrar</button>
-                    
-            
+                           
       
       
             <button onclick="functionAEejecutar()">AI Selection with Pictures</button>
