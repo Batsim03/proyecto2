@@ -10,6 +10,8 @@ const MODELS = [
   'Model 8',
 ];
 
+
+
 const setupModelsList = () => {
 const listElement = document.createElement('ul');
 listElement.className = 'models';
@@ -32,10 +34,12 @@ document.body.append(listElement);}
 
 const handleDelete = (event) => {
   
-  const liElement = event.target.parentElement
+  const liElement = event.target.parentElement;
   console.log(liElement);
   liElement.remove();
+  open.window('#detail');
 }
+
 
 const addDeleteButtonListeners = () => {
   const deleteButtons = document.querySelectorAll('.delete-button');
@@ -48,6 +52,21 @@ const addDeleteButtonListeners = () => {
 
 setupModelsList();
 addDeleteButtonListeners();
+
+function getQueryVariable(variable) {
+  // Estoy asumiendo que query es window.location.search.substring(1);
+  var query = "product_id=32&cat_id=1&sessionid=123";
+  var vars = query.split("&");
+  alert(vars);
+  for (var i=0; i < vars.length; i++) {
+      var pair = vars[i].split("="); 
+      if (pair[0] == variable) {
+          return pair[1];
+      }
+  }
+  return false;
+}
+
 
 
 
