@@ -37,7 +37,6 @@ const handleDelete = (event) => {
   const liElement = event.target.parentElement;
   console.log(liElement);
   liElement.remove();
-  open.window('#detail');
 }
 
 
@@ -66,6 +65,38 @@ function getQueryVariable(variable) {
   }
   return false;
 }
+
+const AIModels = [
+
+{url: 'https://yes-management.net/',
+detail1: 'original',
+detail2: 'disruptive',
+},
+
+{url: 'https://vpxhotel.com/asia/',
+detail1: 'demostration',
+detail2: 'test',
+},
+
+{url: 'https://yes-management.net/',
+detail1: 'modern',
+detail2: 'flexible',
+},
+]
+ 
+const gestModelTemplate = (url, detail1, detail2) => {
+
+return `<div class="div1">
+      <h2 class="roboto-light">1-AI Marketing insertion JS</h2>
+      <picture><img class="image" src="assets/AI module_ChatPGT.jpg" alt="text alternativo"></picture>
+          <ul>
+              <a id="detail1" href="https://yes-management.net/pages/renting-flats-houses-in-europe" class="roboto-regular">${url}</a>
+              <li class="roboto-italics">${detail1}</li>
+              <li class="roboto-italics" >${detail2}</li>
+          </ul>
+        </div>`;
+};
+
 
 
 
