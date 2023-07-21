@@ -27,7 +27,7 @@
     
     <section class="curved"></section>    
     
-    <body>
+    <body onload="cargarProvincias()" >
 
         <div class="parent">
 
@@ -212,6 +212,45 @@
             product_id 
         </button>
     </div> 
+
+    <div>
+        <table>
+            <tr>
+               <td align=right>Modelo IA:</td>
+               <td align=left colspan=3>
+                   <!-- Añadido onchange para cargar los pueblos -->
+                   <select name="provincia" id="provincia" onchange="cargarPueblos();">
+                       <!-- Hay que terminar los options -->
+                       <!-- 
+                            Eliminado de value la llamada a la función,
+                            si eso funciona lo desconocía, y aunque 
+                            lo haga es totalmente innecesario, 
+                            lo correcto es usar el evento onchange 
+                         -->
+                       <option value="">Seleccione un Modelo IA...</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>                    
+               <td align=right>Caracteristicas</td>
+               <td align=left colspan=3>
+                   <select name="pueblo" id="pueblo">
+                       <!-- Hay que terminar los options -->
+                       <!-- 
+                            Eliminado de value la llamada a la función,
+                            si eso funciona lo desconocía, y aunque 
+                            lo haga es totalmente innecesario, 
+                            lo correcto es usar el evento onchange 
+                         -->
+                       <option value="">Ver caracteristicas...</option>
+                   </select>
+               </td>
+           </tr>
+         </table>
+
+         <button onclick="location.href = pueblos">Llévame a otro lado</button>   
+
+<script src="./main.js"></script>
 
 </body>
                             
