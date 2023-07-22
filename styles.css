@@ -134,9 +134,19 @@ margin: 10px;
 .div7 { grid-area: 4 / 1 / 5 / 2; }
 .div8 { grid-area: 4 / 2 / 5 / 3; }
 
+  
   .button {
-        background-color: coral;
-  }
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 0px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
 
  
   
