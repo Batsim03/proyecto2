@@ -1,6 +1,6 @@
 
 function cargarProvincias() {
-  var array = ["Modelo1", "Modelo2", "Modelo3", "Modelo4", "Modelo5", "Modelo6", "Modelo7", "Modelo8"];
+  var array = ["Model1", "Model2", "Model3", "Model4", "Model5", "Model6", "Model7", "Model8"];
   array.sort();
   addOptions("provincia", array);
 }
@@ -20,14 +20,14 @@ function addOptions(domElement, array) {
 function cargarPueblos() {
   // Objeto de provincias con pueblos
   var listaPueblos = {
-    modelo1: ["Laredo", "Gama", "Solares", "Castillo", "Santander"],
-    modelo2: ["Langreo", "Villaviciosa", "Oviedo", "Gijon", "Covadonga"],
-    modelo3: ["Tui", "Cambados", "Redondella", "Porriño", "Ogrove"],
-    modelo4: ["Dos Hermanas", "Écija", "Algeciras", "Marbella", "Sevilla"],
-    modelo5: ["Caceres", "Badajoz", "Plasencia", "Zafra", "Merida"],
-    modelo6: ["Loredo", "sss", "www", "eeee"],
-    modelo7: ["ddfff", "ddddd", "dddd", "ddd"],
-    modelo8: ["ssss", "wwww", "ssss", "ssss"],
+    model1: ["Insertion mode", "Easy to insert", "Flexible"],
+    model2: ["Adaptative", "Modular", "Visual effects"],
+    model3: ["Generative", "Specific", "Adaptable"],
+    model4: ["Technologies", "Methodologies", "Global"],
+    model5: ["Disruptive", "Functional", "Simple"],
+    model6: ["Creative", "Relational", "Updated"],
+    model7: ["Original", "Puntual", "Descriptible"],
+    model8: ["Caracters", "Pictures", "Visual"],
   }
   
   var provincias = document.getElementById('provincia')
@@ -55,4 +55,25 @@ function cargarPueblos() {
 
 // Iniciar la carga de provincias solo para comprobar que funciona
 cargarProvincias();
+
+//todos los botones
+let botones = document.querySelectorAll("button");
+
+//cada vez que el valor del select cambia
+exampleFormControlSelect1.addEventListener("change",()=>{
+  //recupera el valor de la opción seleccionada
+  let valorSeleccionado = exampleFormControlSelect1.options[exampleFormControlSelect1.selectedIndex].value;
+  // para todos los botones elimina la clese visible
+  botones.forEach(b =>{b.classList.remove("visible")})
+  //selecciona el boton que tiene que ser visible
+  
+  let elBoton = document.querySelector(`.btn_${valorSeleccionado}`)
+  //y si el boton existe
+  if(elBoton){
+  //y le añade la clase visible
+  elBoton.classList.add("visible");
+  }
+})
+
+
 
