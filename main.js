@@ -75,5 +75,55 @@ exampleFormControlSelect1.addEventListener("change",()=>{
   }
 })
 
+function redirigir() {
+  const models = document.getElementsByName("model");
+  let seleccionado = null;
+
+  for (const model of models) {
+      if (model.checked) {
+          seleccionado = model.value;
+          break;
+      }
+  }
+
+  if (seleccionado) {
+      switch (seleccionado) {
+          case "model1":
+              window.location.href = "https://yes-management.net";
+              break;
+          case "model2":
+              window.location.href = "https://yes-management-cce441.ingress-daribow.ewp.live/";
+              break;
+          case "model3":
+              window.location.href = "https://yes-management-cce441.ingress-daribow.ewp.live/gallery/";
+              break;
+          case "model4":
+              window.location.href = "https://yes-management.net/products/r-d-marketing-solutions";
+              break;
+          case "model5":
+              window.location.href = "https://www.linkedin.com/company/y-s-management/posts/?feedView=all&viewAsMember=true";
+              break;
+          case "model6":
+              window.location.href = "https://yes-management.net/products/hotel-management-solutions";
+              break;
+          case "model7":
+              window.location.href = "https://yes-management.net/products/renting-housing";
+              break;
+          case "model8":
+              window.location.href = "https://vpxhotel.com/asia/";
+              break;
+      }
+  } else {
+      alert("Please, select a model before ending.");
+  }
+}
+
+
+
+
+
+
+
+
 
 
